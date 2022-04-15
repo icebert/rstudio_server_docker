@@ -20,7 +20,11 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD5
     libbz2-dev \
     liblzma-dev \
     libglpk40 \
-    libgit2-28
+    libgit2-28 \
+    libudunits2-dev \
+    libgdal-dev \
+    libgeos-dev \
+    libproj-dev
 
 RUN wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.02.1-461-amd64.deb && \
     gdebi -n rstudio-server-2022.02.1-461-amd64.deb && \
